@@ -37,6 +37,22 @@ input[type=password]{
     font-size:14px;
     font-family:'Times New Roman', Times, serif;
 }
+.inputwithicon{
+    position: relative;
+}
+.icon{
+    position: absolute;
+    right:45px;
+    padding:1px 2px;    
+}
+.inputpas{
+    position: relative;
+}
+.iconpas{
+    position: absolute;
+    right:45px;
+    top:12px;
+}
 .check{
     width:80%;
     display:flex;
@@ -51,6 +67,7 @@ button{
     height:30px;
     background-color: #3B5998;
     border:none;
+    outline: none;
     cursor:pointer;
     color:#fff;
     font-size:15px;
@@ -79,6 +96,28 @@ input[type=submit].google{
     margin-top:7px;
     margin-bottom:5px;
 }
+.submitinput-facebook{
+    position: relative;
+}
+.facebookicon{
+    position: absolute;
+    right:325px;
+    top:2px;
+}
+.facebook{
+    padding-left:42px;
+}
+.google{
+    padding-left:45px;
+}
+.submitinput-google{
+    position: relative;
+}
+.googleicon{
+    position: absolute;
+    right:322px;
+    top:8px;
+}
 .links a{
     text-decoration:none;
     color:blue;
@@ -91,7 +130,7 @@ input[type=submit].google{
 }
 @media screen and (max-width:300px){
     body{
-        margin-top:150px;
+        margin-top:100px;
     }
     form{
        
