@@ -8,6 +8,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>BocDOC</title>
         <meta name="description" content="">
+        <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="style.css">
     </head>
@@ -18,16 +19,22 @@
         <form action="">
             <div class="container">
                 <h3>Sign in to start your session</h3>
-                <input type="email"
-                id="txtEmail"
-                placeholder="Email"
-                required 
-                /></br>
-                <input type="password"
-                id="pwd"
-                placeholder="Password"
-                required
-                />
+                <div class="inputwithicon">
+                    <input type="email"
+                    id="txtEmail"
+                    placeholder="Email"
+                    required 
+                    />
+                    <ion-icon class="icon" size="large" name="mail"></ion-icon>
+                </div>
+               <div class="inputpas">
+                    <input type="password"
+                    id="pwd"
+                    placeholder="Password"
+                    required
+                    />
+                    <ion-icon class="iconpas" size="large" name="lock"></ion-icon>
+               </div>
                 <div class="check">
                     <div class="checkbox">
                         <input type="checkbox" 
@@ -40,12 +47,18 @@
                 </div>
                 <div class="container-bottom">
                     <p>-OR-</p>
-                    <input type="submit"
-                    class="facebook"
-                    value="Sign in using Facebook"></br>
-                    <input type="submit"
-                    class="google"
-                    value="Sign in using Google+">
+                    <div class="submitinput-facebook">
+                        <input type="submit"
+                        class="facebook"
+                        value="Sign in using Facebook">
+                        <ion-icon class="facebookicon" size="large" name="logo-facebook"></ion-icon>
+                    </div>
+                    <div class="submitinput-google">
+                        <input type="submit"
+                        class="google"
+                        value="Sign in using Google+">
+                        <ion-icon class="googleicon" size="large" name="logo-googleplus"></ion-icon>
+                    </div>
                 </div>
                 <div class="links">
                     <a href="#">Register a new member</a></br>
